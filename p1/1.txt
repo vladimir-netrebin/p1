@@ -1,0 +1,24 @@
+<html>
+<body>
+    <b>Hello</b>, <br> wor<i>ld!</i>
+<center> Это мои любимые числа </center>
+ Я люблю <a href="http://ya.ru">.</a> 
+<center>
+<table border="1" with="50%">
+<tr>
+<td> Фамилия </td>
+<td> Имя </td>
+</tr>
+<tr>
+<td> Pupkin </td>
+<td> Vasya 
+<ol>
+<li> 1
+<li> 2
+</ol> 
+</td>
+</tr>
+</table>
+</center>
+</body>
+</html>

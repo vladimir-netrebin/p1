@@ -1,0 +1,39 @@
+﻿<html>
+        <script type = "text/javascript">
+            function show_pic(){
+//alert('hi');
+var c1_elem = document.getElementById("c1");
+var c2_elem = document.getElementById("c2");
+c1_elem.style.display='none';
+c2_elem.style.display='block';
+}
+function show_text(){
+var c1_elem = document.getElementById("c1");
+var c2_elem = document.getElementById("c2");
+c1_elem.style.display='block';
+c2_elem.style.display='none';
+}
+     
+        </script>
+        <body>
+          <center>
+                <table border="1" width="80%">
+                    <tr>
+                        <td onclick = show_text() width="50%"> info
+                        </td>
+                        <td onclick= show_pic()> map
+                        </td>
+                    </tr>
+     <tr>
+       <td colspan = "2"> 
+                <center> <div id = c1 >Кня́жество Мона́ко — карликовое государство, ассоциированное с Францией, расположенное на юге Европы на берегу Лигурийского моря; на суше граничит с Францией. Является одной из самых маленьких и наиболее густонаселённых стран мира. Княжество широко известно благодаря казино в Монте-Карло и проводимому здесь этапу чемпионата Формулы-1 — «Гран-при Монако».</div>
+                </center>
+          <center> <div id = c2 > <img src="map.jpg" /> </div>
+          </center> 
+       </td>
+     </tr>
+                </table>
+           </center>
+         </body>
+         
+</html>
