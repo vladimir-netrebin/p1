@@ -1,0 +1,81 @@
+﻿<html>
+       <style> 
+  td.menu {background: white;
+      color: black;
+}     
+  body  {
+    background-image: url('ajy.jpg');
+}
+  td.menu:hover {background: black;
+                 color: White;
+}
+
+#c1 {
+    color: black;
+    background: white;
+    text-align: center;
+}
+</style>
+<body>
+     <script type = "text/javascript">
+            function show_pic(){
+//alert('hi');
+var c1_elem = document.getElementById("c1");
+var c2_elem = document.getElementById("c2");
+var c3_elem = document.getElementById("c3");
+c1_elem.style.display='none';
+c2_elem.style.display='block';
+c3_elem.style.display='none';
+}
+function show_text(){
+var c1_elem = document.getElementById("c1");
+var c2_elem = document.getElementById("c2");
+var c3_elem = document.getElementById("c3");
+c1_elem.style.display='block';
+c2_elem.style.display='none';
+c3_elem.style.display='none';
+}
+function show_quiz() {
+    var c1_elem = document.getElementById("c1");
+    var c2_elem = document.getElementById("c2");
+    var c3_elem = document.getElementById("c3");
+    c1_elem.style.display = 'none';
+    c2_elem.style.display = 'none';
+    c3_elem.style.display = 'block';
+}  
+        </script>
+        <body>
+          <center>
+                <table border="5" width="100%">
+                    <tr>
+                        <td class = menu onclick = show_text() width="25%"> <center> info </center>
+                        </td>
+                        <td class = menu onclick = show_pic() width="25%"> <center> map </center>
+                        </td>
+                        <td class = menu onclick = show_quiz() width="25%"> <center> quiz </center>
+                        </td>
+                    </tr>
+     <tr>
+       <td colspan = "3"> 
+                <center> 
+                 <div id = c1 style = "display:none" >Ниге́рия, Федерати́вная Респу́блика Ниге́рия — государство в Западной Африке. Граничит на западе с Бенином, на севере — с Нигером, на северо-востоке — с Чадом, на востоке — с Камеруном. Площадь — 923 768 км². Население — 194 млн (2015). Нигерия является крупнейшим по численности населения государством Африки, занимая лишь 14 место на континенте по площади территории. Столица — Абуджа. В 2014 году Нигерия, ведущий производитель нефти в Африке, стала крупнейшей африканской экономикой, обогнав ЮАР по размеру ВВП. История Нигерии
+1 октября 1960 года Нигерия стала независимым государством. Первое правительство независимой Нигерии основывалось на коалиции партий НСНК и СНК, премьер-министром стал представитель СНК Абубакар Тафава Балева. После провозглашения в 1963 году Нигерии республикой пост президента занял Ннамди Азикиве (представитель НСНГ). Оппозиция была представлена Группой действия во главе с Обафеми Аволово. Региональные правительства возглавили: на Севере — лидер СНК Ахмаду Белло, на Западе — С. Акинтола из Группы действия и на Востоке — представитель НСНГ М. Окпара. В 1963 на территории восточной части Западной Нигерии была образована четвёртая область, Среднезападная. На состоявшихся в 1964 выборах в этом регионе победу одержал НСНГ.
+В январе 1966 года группа офицеров-игбо совершила военный переворот. Короткий период «первой республики» закончился. Военные попытались учредить в Нигерии унитарное государство, разделённое на провинции. Северонигерийские мусульмане сочли переворот угрозой своим интересам, и по всей стране вспыхнули межэтнические столкновения. В конце июля военные части, состоящие из солдат северян, совершили новый военный переворот. Главой государства стал подполковник (впоследствии генерал), Якубу Говон (правил с 1966 по 1975 год). На севере возобновились преследования игбо, были убиты тысячи человек, что привело к массовому бегству игбо на восток, их попыткам создать государство Биафра и гражданской войне 1967—1970. Страна возвратилась к федеративной системе. <img scr ="flag.jpg" />
+                 </div>
+                </center>
+          <center>
+           <div id = c2 style = "display:none" > 
+               <img src="map.jpg" />
+           </div>
+          </center>
+               <center> 
+                  <div id = c3 style = "display:none" > Здесь будет игра, но потом. 
+                  </div>
+               </center> 
+       </td>
+     </tr>
+                </table>
+           </center>
+         </body>
+         
+</html>
