@@ -17,7 +17,6 @@ border: 10px solid black;
 		border-collapse: separate;
 		bootstrap 3
         }
-}
   td.menu:hover {background: black;
                  color: white;
                  font-family: 'Times New Roman';
@@ -83,7 +82,7 @@ c1_elem.style.display='none';
 c2_elem.style.display='block';
 c3_elem.style.display='none';
 }
-function show_text(){
+            function show_text(){
 var c1_elem = document.getElementById("c1");
 var c2_elem = document.getElementById("c2");
 var c3_elem = document.getElementById("c3");
@@ -91,7 +90,7 @@ c1_elem.style.display='block';
 c2_elem.style.display='none';
 c3_elem.style.display='none';
 }
-function show_quiz() {
+            function show_quiz() {
     var c1_elem = document.getElementById("c1");
     var c2_elem = document.getElementById("c2");
     var c3_elem = document.getElementById("c3");
@@ -99,15 +98,23 @@ function show_quiz() {
     c2_elem.style.display = 'none';
     c3_elem.style.display = 'block';
 }
+function check() {
+    q1elem = document.getElementById('q1');
+    if (q1elem.checked) { alert("Yes") }
+    else { alert("No") }
+    reselem = document.getElementById('q3')
+    answer = reselem.value;
+    res.innerHTML="Вы уверены, что " + answer + "?"
+}
         </script>
           <div id="top"><b>Нигерия</b></div>
                 <table border="10" width="100%">
                     <tr>
-                        <td class = menu onclick = show_text() width="25%"> <center> Информация </center>
+                        <td class = "menu" onclick ="show_text()" width="33%"> <center> Информация </center>
                         </td>
-                        <td class = menu onclick = show_pic() width="25%"> <center> Карта </center>
+                        <td class = menu onclick = show_pic() width="33%"> <center> Карта </center>
                         </td>
-                        <td class = menu onclick = show_quiz() width="25%"> <center> Викторина </center>
+                        <td class = menu onclick = show_quiz() > <center> Викторина </center>
                         </td>
                     </tr>
      <tr>
@@ -145,7 +152,12 @@ function show_quiz() {
              </center>
              <center>
                  <div id=c3 style="display:none">
-                     Здесь будет игра, но потом.
+                     <input type='checkbox' id= 'q1' /> <label for='q1'> привит от гриппа? </label> 
+                     2+2 = <input type= "radio" name='q2' id='w1'/> <label for='w1'> 3 </label> <input type= "radio" name='q2' id= 'w2'/> <label for='w2'> 4</label> <input type= "radio" name='q2' id='w3'/> <label for='w3'>5</label>
+                     <input type= 'text' id='q3' />
+                     <input type= 'button' value= 'Wow' onclick= 'check()' />
+                     <div id ='res'> </div>
+                     
                  </div>
              </center>
          </td>
