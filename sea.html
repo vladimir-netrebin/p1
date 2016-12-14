@@ -1,12 +1,41 @@
 <html>
   <body>
+  <script>
+      var i = 0;
+      function score() {
+          i = i + 1;
+          resEl = document.getElementById('res');
+          resEl.innerHTML = String(i);
+      }
+      function unscore() {
+          i = i - 10;
+          resEl = document.getElementById('res');
+          resEl.innerHTML = String(i);
+      }
+</script>
    <svg width ="1000" height="700">
-     <rect width ="1000" height ="33%" fill="rgb(130, 207, 255)" />
-     <rect y ="230" width ="1000" height ="33%" fill="rgb(88, 127, 252)" />
-     <rect y ="450" width ="1000" height ="10%" fill="rgb(224, 186, 96)" />
-     <circle cx="500" cy="150" r ="20" fill="yellow">
+     <rect onclick="unscore()" width ="1000" height ="33%" fill="rgb(130, 207, 255)" />
+     <rect onclick="unscore()" y ="230" width ="1000" height ="33%" fill="rgb(88, 127, 252)" />
+     <rect onclick="unscore()" y ="450" width ="1000" height ="10%" fill="rgb(224, 186, 96)" />
+     <circle id="c1" onclick="score()" cx="500" cy="150" r ="20" fill="yellow">
+     <animate 
+           xlink:href="#c1"
+           attributeName="cx"
+           values="0;1050"
+           dur="5s"
+           repeatCount="1000"
+  />
+
+  <animate 
+           xlink:href="#c1"
+           attributeName="fill"
+           values="red;yellow;rgb(170,170,255)"
+           begin="click"
+           dur="0.5s"
+           repeatCount="1"
+  />
    </svg>  
-    
+    <h1>Score: <span id="res"></span></h1>
     
     
   </body>
